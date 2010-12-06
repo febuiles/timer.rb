@@ -1,0 +1,43 @@
+timer.rb
+=======
+
+timer.rb is a simple command line timer written in Ruby. It uses OS X voice commands to let you know
+when it's hammer time!
+
+Requirements
+------------
+* Ruby
+
+Installation
+------------
+
+You can install from Rubygems
+
+    $ gem install timer.rb
+
+Or you can download the source and build it manually:
+
+    $ git clone https://febuiles@github.com/febuiles/timer.rb.git
+    $ rake install
+
+
+Usage
+------
+
+    $ timer.rb [duration]
+
+As in:
+
+    $ timer.rb 2h
+    $ timer.rb 2m
+    $ timer.rb 2h 3m
+    $ timer.rb 0.5h
+
+Bugs/Contact
+------------
+
+Got a problem? Create an issue in the [Github Tracker](https://github.com/febuiles/timer.rb/issues).
+
+Author
+------
+Federico Builes - federico@mheroin.com - @febuiles
