@@ -30,6 +30,7 @@ As in:
 
     $ timer.rb 2h
     $ timer.rb 2m
+    $ timer.rb 2s
     $ timer.rb 2h 3m
     $ timer.rb 0.5h
 
