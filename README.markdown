@@ -26,15 +26,15 @@ Or you can download the source and build it manually:
 Usage
 ------
 
-    $ timer.rb [duration]
+    $ timer [duration]
 
 As in:
 
-    $ timer.rb 2h
-    $ timer.rb 2m
-    $ timer.rb 2s
-    $ timer.rb 2h 3m
-    $ timer.rb 0.5h
+    $ timer 2h
+    $ timer 2m
+    $ timer 2s
+    $ timer 2h 3m
+    $ timer 0.5h
 
 Bugs/Contact
 ------------

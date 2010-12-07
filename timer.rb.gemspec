@@ -17,18 +17,18 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "rspec"
 
-  s.executables       = %w( timer.rb )
+  s.executables       = %w( timer )
   s.description       = <<desc
 Use:
 
-    $ timer.rb [duration]
+    $ timer [duration]
 
 As in:
 
-    $ timer.rb 2h
-    $ timer.rb 2m
-    $ timer.rb 2h 3m
-    $ timer.rb 0.5h
+    $ timer 2h
+    $ timer 2m
+    $ timer 2h 3m
+    $ timer 0.5h
 
 desc
 end
