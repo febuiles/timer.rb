@@ -35,6 +35,11 @@ describe Timer::TimeParser do
       t("2s 2m 2h").should == 7322
     end
 
+    it "doesn't expect integer values" do
+      t("0.5m").should == 30
+      t("2.3h 0.5m").should == 8310
+    end
+
     it "returns nil for empty inputs" do
       t(nil).should be_nil
     end
