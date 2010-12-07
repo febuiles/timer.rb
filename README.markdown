@@ -18,7 +18,9 @@ You can install from Rubygems
 Or you can download the source and build it manually:
 
     $ git clone https://febuiles@github.com/febuiles/timer.rb.git
-    $ rake install
+    $ cd timer.rb
+    $ gem build
+    $ gem install timer.rb --local
 
 
 Usage
