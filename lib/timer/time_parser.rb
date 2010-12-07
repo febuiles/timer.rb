@@ -8,7 +8,13 @@ module Timer
       mins = []
       secs = []
 
-      time_chunks = duration.split(" ")
+      # split only if we receive a string, ignore on arrays.
+      if duration.respond_to?(:split)
+        time_chunks = duration.split(" ")
+      else
+        time_chunks = duration
+      end
+
       time_chunks.reject! { |c| c !~ /\d+[mhs]$/ }
       hours += time_chunks.select {|c| c[-1,1] == "h" }
       mins += time_chunks.select {|c| c[-1,1] == "m" }
@@ -18,6 +24,7 @@ module Timer
       total += mins.inject(0) { |sum, x| sum + (x.to_i * 60) }
       total += secs.inject(0) { |sum, x| sum + x.to_i }
 
+      # nil otherwise
       total unless total == 0
     end
   end
