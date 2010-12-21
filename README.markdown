@@ -19,7 +19,7 @@ Or you can download the source and build it manually:
 
     $ git clone https://febuiles@github.com/febuiles/timer.rb.git
     $ cd timer.rb
-    $ gem build
+    $ gem build timer.rb.gemspec
     $ gem install timer.rb --local
 
 
