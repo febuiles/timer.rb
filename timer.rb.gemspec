@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.files            += Dir.glob("lib/**/*")
   s.files            += Dir.glob("bin/**/*")
 
-  s.add_development_dependency "rspec"
+  s.add_development_dependency "rspec", "pamela"
 
   s.executables       = %w( timer )
   s.description       = <<desc
